@@ -33,6 +33,3 @@ export const getRandomColor = (intensity, numberOfColorsToGenerate) => {
   return { hslColorLists, rgbColorLists, hexColorLists };
 }
 
-
-
-console.log(getRandomColor(200, 100))
