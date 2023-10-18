@@ -1,9 +1,9 @@
 {
   "type": "module",
   "name": "get-random-colors",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Provide a list of random colors in Hex code with adjustable brightness",
-  "main": "index.js",
+  "main": "./src/lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./src/lib/index.js"
