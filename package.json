@@ -1,0 +1,19 @@
+{
+  "type": "module",
+  "name": "get-random-colors",
+  "version": "1.0.0",
+  "description": "Provide a list of random colors in Hex code with adjustable brightness",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/lib/index.js"
+  },
+  "author": "walid",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "ts-node": "^10.9.1"
+  }
+}
