@@ -6,20 +6,33 @@ import { hslToHex } from '../helpers/hslToHex.js';
 import { isIntensityValid } from '../helpers/isIntensityValid.js';
 
 /**
- * Generate random colors based on intensity provided.
+ * Generate random colors based on intensity and numberOfColorsToGenerate provided.
  *
- * @param {number} intensity - The intensity of colors (1-100).
- * @param {number} numberOfColorsToGenerate - The number of colors to generate.
+ * @param {number} intensity - First Argument -> The intensity of colors (1-100).
+ * @param {number} numberOfColorsToGenerate - Second Argument -> The number of colors to generate.
  * @returns {Object} An object containing lists of Arrays: hslColorLists[ ], rgbColorLists[ ], hexColorLists[ ].
  */
 
-export const getRandomColors = (intensity, numberOfColorsToGenerate) => {
+export const getRandomColors = (...args) => {
+  const stack = new Error().stack;
+
+  if (args.length !== 2) {
+    console.log("Call Stack", stack)
+    throw new Error(`Passing Argument -- Expected length of Arguments: 2  ------  Received: ${args.length} -> getRandomColors(${args})`);
+  }
+
+  const intensity = args[0]
+  const numberOfColorsToGenerate = args[1]
+
   if (!isTypeOfNumber(intensity, numberOfColorsToGenerate)) {
+    console.log("Call Stack", stack)
     throw new Error(`All parameters should be of type Number --- Exptected Data type -> getRandomColors(number, number) --- Received: getRandomColors(${typeof (intensity) + ', ' + typeof (numberOfColorsToGenerate)})`);
   }
   if (!isIntensityValid(intensity)) {
+    console.log("Call Stack", stack)
     throw new Error(`Intensity Error --- Expected Range 1-100: Received ${intensity}`);
   }
+
   const hslColorLists = []
   const rgbColorLists = []
   const hexColorLists = []
@@ -39,4 +52,4 @@ export const getRandomColors = (intensity, numberOfColorsToGenerate) => {
 }
 
 
-console.log(getRandomColors(20, 10, 5))
+// console.log(getRandomColors(20))
