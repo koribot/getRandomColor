@@ -15,7 +15,7 @@ import { checkArgumentsError } from './../helpers/checkArgumentsError.js';
 
 export const getRandomColors = (...args) => {
 
-  checkArgumentsError(args)
+  checkArgumentsError(args) // if no error proceed otherwise HALT the function
 
   const intensity = args[0]
   const numberOfColorsToGenerate = args[1]
