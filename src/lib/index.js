@@ -51,5 +51,3 @@ export const getRandomColors = (...args) => {
   return { hslColorLists, rgbColorLists, hexColorLists };
 }
 
-
-// console.log(getRandomColors(20))
