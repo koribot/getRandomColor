@@ -14,12 +14,10 @@ import { isIntensityValid } from '../helpers/isIntensityValid.js';
 
 export const getRandomColors = (intensity, numberOfColorsToGenerate) => {
   if (!isTypeOfNumber(intensity, numberOfColorsToGenerate)) {
-    console.log('All Paramters should be in type of Number');
-    return null
+    throw new Error(`All parameters should be of type Number --- Exptected Data type -> getRandomColors(number, number) --- Received: getRandomColors(${typeof (intensity) + ', ' + typeof (numberOfColorsToGenerate)})`);
   }
   if (!isIntensityValid(intensity)) {
-    console.log('Intensity Should be in range of 1-100');
-    return null
+    throw new Error(`Intensity Error --- Expected Range 1-100: Received ${intensity}`);
   }
   const hslColorLists = []
   const rgbColorLists = []
@@ -40,4 +38,4 @@ export const getRandomColors = (intensity, numberOfColorsToGenerate) => {
 }
 
 
-console.log(getRandomColors(1, 10))
+console.log(getRandomColors(20, 10, 5))
