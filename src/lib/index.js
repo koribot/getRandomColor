@@ -1,7 +1,7 @@
 import { isTypeOfNumber } from '../helpers/isTypeOfNumber.js'
 import { hslToRgb } from '../helpers/hslToRgb.js';
 import { hslToHex } from '../helpers/hslToHex.js';
-
+import { isIntensityValid } from '../helpers/isIntensityValid.js';
 
 
 /**
@@ -15,6 +15,10 @@ import { hslToHex } from '../helpers/hslToHex.js';
 export const getRandomColors = (intensity, numberOfColorsToGenerate) => {
   if (!isTypeOfNumber(intensity, numberOfColorsToGenerate)) {
     console.log('All Paramters should be in type of Number');
+    return null
+  }
+  if (!isIntensityValid(intensity)) {
+    console.log('Intensity Should be in range of 1-100');
     return null
   }
   const hslColorLists = []
@@ -34,3 +38,6 @@ export const getRandomColors = (intensity, numberOfColorsToGenerate) => {
   }
   return { hslColorLists, rgbColorLists, hexColorLists };
 }
+
+
+console.log(getRandomColors(1, 10))
