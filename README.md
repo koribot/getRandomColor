@@ -1,13 +1,4 @@
-# Your Project Name
-
-Get a list of random colors with adjustable intensity(1-100), and number of colors to generate
-
-returns:
-       {
-        hslColorLists[], 
-        rgbColorLists[],
-        hexColorLists[]
-       }
+# getRandomColors
 
 ## Table of Contents
 
@@ -16,15 +7,38 @@ returns:
   - [Installation](#installation)
 - [Usage](#usage)
 
+
+
 ## About
 
+Get a list of random colors with adjustable intensity (1-100) and the number of colors to generate.
+
+**Returns:**
+
+```json
+{
+  "hslColorLists": [],
+  "rgbColorLists": [],
+  "hexColorLists": []
+}
+```
 
 ## Getting Started
-
-
+You can install it by downloading the source code or via npm
 
 ### Installation
 
 ```bash
 npm i get-list-of-random-colors
 ``` 
+
+
+## Usage
+
+```bash
+import {getRandomColors} from 
+```
+
+```bash
+getRandomColors(50,6) # (intensity(1-100), numberofColorsToGenerate)
+```
