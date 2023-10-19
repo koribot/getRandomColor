@@ -1,8 +1,9 @@
+'use strict'
+
 import { isTypeOfNumber } from '../helpers/isTypeOfNumber.js'
 import { hslToRgb } from '../helpers/hslToRgb.js';
 import { hslToHex } from '../helpers/hslToHex.js';
 import { isIntensityValid } from '../helpers/isIntensityValid.js';
-
 
 /**
  * Generate random colors based on intensity provided.
