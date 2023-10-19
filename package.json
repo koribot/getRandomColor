@@ -1,6 +1,6 @@
 {
   "type": "module",
-  "name": "get-random-colors",
+  "name": "get-list-of-random-colors",
   "version": "1.0.1",
   "description": "Provide a list of random colors in Hex code with adjustable brightness",
   "main": "./src/lib/index.js",
@@ -10,10 +10,6 @@
   },
   "author": "walid",
   "license": "ISC",
-  "devDependencies": {
-    "typescript": "^5.2.2"
-  },
-  "dependencies": {
-    "ts-node": "^10.9.1"
-  }
+  "devDependencies": {},
+  "dependencies": {}
 }
