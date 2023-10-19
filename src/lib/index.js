@@ -2,6 +2,8 @@ import { isTypeOfNumber } from '../helpers/isTypeOfNumber.js'
 import { hslToRgb } from '../helpers/hslToRgb.js';
 import { hslToHex } from '../helpers/hslToHex.js';
 
+
+
 /**
  * Generate random colors based on intensity provided.
  *
@@ -10,7 +12,7 @@ import { hslToHex } from '../helpers/hslToHex.js';
  * @returns {Object} An object containing lists of Arrays: hslColorLists[ ], rgbColorLists[ ], hexColorLists[ ].
  */
 
-export const getRandomColor = (intensity, numberOfColorsToGenerate) => {
+export const getRandomColors = (intensity, numberOfColorsToGenerate) => {
   if (!isTypeOfNumber(intensity, numberOfColorsToGenerate)) {
     console.log('All Paramters should be in type of Number');
     return null
@@ -32,4 +34,3 @@ export const getRandomColor = (intensity, numberOfColorsToGenerate) => {
   }
   return { hslColorLists, rgbColorLists, hexColorLists };
 }
-
