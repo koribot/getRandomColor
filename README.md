@@ -36,7 +36,7 @@ npm i get-list-of-random-colors
 ## Usage
 
 ```bash
-import {getRandomColors} from 
+import {getRandomColors} from 'get-random-colors'
 ```
 
 ```bash
