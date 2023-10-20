@@ -5,7 +5,9 @@
     "random colors",
     "RGB, HSL, HEX color generator",
     "randomize colors",
-    "get random colors"
+    "get random colors",
+    "color randomizer",
+    "get-random-colors"
   ],
   "version": "1.0.6",
   "description": "Provide a list of random colors in Hex, RGB, and HSL with adjustable intensity(1-100) as Parameters",
@@ -15,7 +17,5 @@
     "start": "node ./src/lib/index.js"
   },
   "author": "walid",
-  "license": "ISC",
-  "devDependencies": {},
-  "dependencies": {}
+  "license": "ISC"
 }
