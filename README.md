@@ -55,6 +55,9 @@ const random_colors = getRandomColors(20, 10)
 
 
 console.log(random_colors)
+console.log(random_colors.hslColorLists) # accessing hslColorLists array
+console.log(random_colors.rgbColorLists) # accessing rgbColorLists array
+console.log(random_colors.hexColorLists) # accessing hexColorLists array
 
 ```
 **Sample Output**
