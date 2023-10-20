@@ -37,7 +37,7 @@ npm i get-list-of-random-colors
 ## Usage
 
 ```bash
-import {getRandomColors} from 'get-random-colors'
+import {getRandomColors} from 'get-random-colors' # exact path node_modules/get-random-colors/src/lib/index.js
 ```
 
 ```bash
