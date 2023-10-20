@@ -30,7 +30,7 @@ You can install it by downloading the source code or via npm
 ### Installation
 
 ```bash
-npm i get-list-of-random-colors
+npm i get-random-colors
 ``` 
 
 
