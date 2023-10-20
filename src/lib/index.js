@@ -43,5 +43,3 @@ export const getRandomColors = (...args) => {
   return colorLists;
 
 }
-
-console.log(getRandomColors(5, 100).hexColorLists)
