@@ -7,7 +7,7 @@
     "randomize colors",
     "get random colors"
   ],
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "Provide a list of random colors in Hex, RGB, and HSL with adjustable intensity(1-100) as Parameters",
   "main": "./src/lib/index.js",
   "scripts": {
