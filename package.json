@@ -13,7 +13,7 @@
     "type": "git",
     "url": "https://github.com/username/repo-name"
   },
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Provide a list of random colors in Hex, RGB, and HSL with adjustable intensity(1-100) as Parameters",
   "main": "./src/lib/index.js",
   "scripts": {
