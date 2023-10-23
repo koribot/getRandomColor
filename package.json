@@ -13,7 +13,7 @@
     "type": "git",
     "url": "https://github.com/koribot/getRandomColors"
   },
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Provide a list of random colors in Hex, RGB, and HSL with adjustable intensity(1-100) as Parameters",
   "main": "./src/lib/index.js",
   "scripts": {
